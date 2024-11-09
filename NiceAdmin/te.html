@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Voyage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Style du fond du modal */
+        .modal {
+            display: none; /* Cacher le modal par défaut */
+            position: fixed;
+            z-index: 1; /* Au-dessus des autres éléments */
+            left: 0;
+            top: 0;
+            width: 100%; /* Plein écran */
+            height: 100%; /* Plein écran */
+            overflow: auto; /* Ajoute un défilement si nécessaire */
+            background-color: rgb(0,0,0); /* Fond noir */
+            background-color: rgba(0,0,0,0.4); /* Fond noir avec opacité */
+        }
+        /* Style du contenu du modal */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* Centre le modal */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Largeur du modal */
+            max-width: 500px; /* Largeur maximale */
+            border-radius: 5px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .forms-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="open-modal">Ajouter un Voyage</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+    </div>
+</div>
+
+
+<h2>Ajouter Voyage</h2>
+<form id="voyage-form">
+    <div class="forms-group">
+        <label for="heure_depart">Heure Départ:</label>
+        <input type="time" id="heure_depart" name="heure_depart" required>
+    </div>
+    <div class="forms-group">
+        <label for="heure_arrivee">Heure Arrivée:</label>
+        <input type="time" id="heure_arrivee" name="heure_arrivee" required>
+    </div>
+    <div class="forms-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+    <div class="forms-group">
+        <label for="id_classe">ID Classe:</label>
+        <input type="number" id="id_classe" name="id_classe" required>
+    </div>
+    <div class="forms-group">
+        <label for="id_personnel">ID Personnel:</label>
+        <input type="number" id="id_personnel" name="id_personnel" required>
+    </div>
+    <div class="forms-group">
+        <label for="id_chauffeur">ID Chauffeur:</label>
+        <input type="number" id="id_chauffeur" name="id_chauffeur" required>
+    </div>
+    <div class="forms-group">
+        <label for="id_vehicule">ID Véhicule:</label>
+        <input type="text" id="id_vehicule" name="id_vehicule" required>
+    </div>
+    <div class="forms-group">
+        <label for="id_trajet">ID Trajet:</label>
+        <input type="number" id="id_trajet" name="id_trajet" required>
+    </div>
+    <button type="submit">Ajouter Voyage</button>
+</form>
+
+<script>
+    // Obtenir le modal
+    var modal = document.getElementById("myModal");
+
+    // Obtenir le bouton qui ouvre le modal
+    var btn = document.getElementById("open-modal");
+
+    // Obtenir l'élément <span> qui ferme le modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Lorsque l'utilisateur clique sur le bouton, ouvrir le modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Lorsque l'utilisateur clique sur <span> (x), fermer le modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Lorsque l'utilisateur clique en dehors du modal, fermer le modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Gérer la soumission du formulaire
+    document.getElementById('voyage-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+        alert('Voyage ajouté !'); // Remplacez ceci par votre logique d'ajout réelle
+        modal.style.display = 'none'; // Ferme le modal après soumission
+        this.reset(); // Réinitialise le formulaire
+    });
+</script>
+
+</body>
+</html>

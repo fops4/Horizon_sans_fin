@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="time"],
+input[type="date"],
+textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Connexion</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Se connecter</button>
+        </form>
+    
+        <h2>Inscription</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" name="adresse" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Numéro:</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="email_inscription">Email:</label>
+                <input type="email" id="email_inscription" name="email_inscription" required>
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Ajouter un Voyage</h2>
+        <form id="voyage-form">
+            <div class="form-group">
+                <label for="id_voyage">ID Voyage:</label>
+                <input type="number" id="id_voyage" name="id_voyage" required>
+            </div>
+            <div class="form-group">
+                <label for="heure_depart">Heure Départ:</label>
+                <input type="time" id="heure_depart" name="heure_depart" required>
+            </div>
+            <div class="form-group">
+                <label for="heure_arrivee">Heure Arrivée:</label>
+                <input type="time" id="heure_arrivee" name="heure_arrivee" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="id_classe">ID Classe:</label>
+                <input type="number" id="id_classe" name="id_classe" required>
+            </div>
+            <div class="form-group">
+                <label for="id_personnel">ID Personnel:</label>
+                <input type="number" id="id_personnel" name="id_personnel" required>
+            </div>
+            <div class="form-group">
+                <label for="id_chauffeur">ID Chauffeur:</label>
+                <input type="number" id="id_chauffeur" name="id_chauffeur" required>
+            </div>
+            <div class="form-group">
+                <label for="id_vehicule">ID Véhicule:</label>
+                <input type="text" id="id_vehicule" name="id_vehicule" required>
+            </div>
+            <div class="form-group">
+                <label for="id_trajet">ID Trajet:</label>
+                <input type="number" id="id_trajet" name="id_trajet" required>
+            </div>
+            <button type="submit">Ajouter Voyage</button>
+        </form>
+    </div>
+
+
+
+    <div class="form-container">
+        <h2>Ajouter un Trajet</h2>
+        <form id="trajet-form">
+            <div class="form-group">
+                <label for="ville_depart">Ville Départ:</label>
+                <input type="text" id="ville_depart" name="ville_depart" required>
+            </div>
+            <div class="form-group">
+                <label for="ville_arrivee">Ville Arrivée:</label>
+                <input type="text" id="ville_arrivee" name="ville_arrivee" required>
+            </div>
+            <button type="submit">Ajouter Trajet</button>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Ajouter un Véhicule</h2>
+        <form id="vehicule-form">
+            <div class="form-group">
+                <label for="immatriculation">Immatriculation:</label>
+                <input type="text" id="immatriculation" name="immatriculation" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre_place">Nombre de Places:</label>
+                <input type="number" id="nombre_place" name="nombre_place" required>
+            </div>
+            <div class="form-group">
+                <label for="id_modele">ID Modèle:</label>
+                <input type="number" id="id_modele" name="id_modele" required>
+            </div>
+            <button type="submit">Ajouter Véhicule</button>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Ajouter un Chauffeur</h2>
+        <form id="chauffeur-form">
+            <div class="form-group">
+                <label for="nom_chauffeur">Nom:</label>
+                <input type="text" id="nom_chauffeur" name="nom_chauffeur" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse_chauffeur">Adresse:</label>
+                <input type="text" id="adresse_chauffeur" name="adresse_chauffeur" required>
+            </div>
+            <div class="form-group">
+                <label for="numero_chauffeur">Numéro:</label>
+                <input type="text" id="numero_chauffeur" name="numero_chauffeur" required>
+            </div>
+            <button type="submit">Ajouter Chauffeur</button>
+        </form>
+    </div>
+
+
+
+    <div class="form-container">
+        <h2>Donner un Avis</h2>
+        <form id="avis-form">
+            <div class="form-group">
+                <label for="contenu">Contenu:</label>
+                <textarea id="contenu" name="contenu" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="id_client_avis">ID Client:</label>
+                <input type="number" id="id_client_avis" name="id_client_avis" required>
+            </div>
+            <div class="form-group">
+                <label for="id_voyage_avis">ID Voyage:</label>
+                <input type="number" id="id_voyage_avis" name="id_voyage_avis" required>
+            </div>
+            <button type="submit">Soumettre Avis</button>
+        </form>
+    </div>
+
+
+
+    <div class="form-container">
+        <h2>Envoyer un Message</h2>
+        <form id="message-form">
+            <div class="form-group">
+                <label for="libelle">Message:</label>
+                <textarea id="libelle" name="libelle" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="id_client_message">ID Client:</label>
+                <input type="number" id="id_client_message" name="id_client_message" required>
+            </div>
+            <button type="submit">Envoyer Message</button>
+        </form>
+    </div>
+
+
+
+    <div class="form-container">
+        <h2>Ajouter du Personnel</h2>
+        <form id="personnel-form">
+            <div class="form-group">
+                <label for="nom_personnel">Nom:</label>
+                <input type="text" id="nom_personnel" name="nom_personnel" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse_personnel">Adresse:</label>
+                <input type="text" id="adresse_personnel" name="adresse_personnel" required>
+            </div>
+            <div class="form-group">
+                <label for="numero_personnel">Numéro:</label>
+                <input type="text" id="numero_personnel" name="numero_personnel" required>
+            </div>
+            <button type="submit">Ajouter Personnel</button>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Créer un Compte</h2>
+        <form id="compte-form">
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="id_personnel">ID Personnel:</label>
+                <input type="number" id="id_personnel" name="id_personnel" required>
+            </div>
+            <button type="submit">Créer Compte</button>
+        </form>
+    </div>
+
+
+
+    <div class="form-container">
+        <h2>Connexion un Compte</h2>
+        <form id="compte-form">
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Ajouter une Classe</h2>
+        <form id="classe-form">
+            <div class="form-group">
+                <label for="nom_classe">Nom Classe:</label>
+                <input type="text" id="nom_classe" name="nom_classe" required>
+            </div>
+            <div class="form-group">
+                <label for="prix">Prix:</label>
+                <input type="number" step="0.01" id="prix" name="prix" required>
+            </div>
+            <button type="submit">Ajouter Classe</button>
+        </form>
+    </div>
+
+
+
+    <div class="form-container">
+        <h2>Ajouter un Modèle</h2>
+        <form id="modele-form">
+            <div class="form-group">
+                <label for="nom_modele">Nom Modèle:</label>
+                <input type="text" id="nom_modele" name="nom_modele" required>
+            </div>
+            <div class="form-group">
+                <label for="marque">Marque:</label>
+                <input type="text" id="marque" name="marque" required>
+            </div>
+            <button type="submit">Ajouter Modèle</button>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Ajouter un Colis</h2>
+        <form id="colis-form">
+            <div class="form-group">
+                <label for="id_colis">ID Colis:</label>
+                <input type="number" id="id_colis" name="id_colis" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="prix">Prix:</label>
+                <input type="number" step="0.01" id="prix" name="prix" required>
+            </div>
+            <div class="form-group">
+                <label for="destinataire">Destinataire:</label>
+                <input type="text" id="destinataire" name="destinataire" required>
+            </div>
+            <div class="form-group">
+                <label for="statut">Statut:</label>
+                <input type="text" id="statut" name="statut" required>
+            </div>
+            <div class="form-group">
+                <label for="numero_destinataire">Numéro Destinataire:</label>
+                <input type="text" id="numero_destinataire" name="numero_destinataire" required>
+            </div>
+            <div class="form-group">
+                <label for="ville_depart">Ville Départ:</label>
+                <input type="text" id="ville_depart" name="ville_depart" required>
+            </div>
+            <div class="form-group">
+                <label for="ville_arrivee">Ville Arrivée:</label>
+                <input type="text" id="ville_arrivee" name="ville_arrivee" required>
+            </div>
+            <div class="form-group">
+                <label for="id_client">ID Client:</label>
+                <input type="number" id="id_client" name="id_client" required>
+            </div>
+            <div class="form-group">
+                <label for="id_voyage">ID Voyage:</label>
+                <input type="number" id="id_voyage" name="id_voyage" required>
+            </div>
+            <button type="submit">Ajouter Colis</button>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
