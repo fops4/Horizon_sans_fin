@@ -58,7 +58,7 @@
           <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Inscriptions</h5>
-                <button id="open-modal">Ajouter un Chauffeur</button>
+                <button id="open-modal" class="btn btn-primary">Ajouter un Chauffeur</button>
 
                 <div id="myModal" class="modal">
                     <div class="modal-content">
@@ -76,7 +76,8 @@
                               <label for="numero_chauffeur">Numéro:</label>
                               <input type="text" id="numero_chauffeur" name="numero_chauffeur" required>
                           </div>
-                          <button type="submit">Ajouter Chauffeur</button>
+                          <br/>
+                          <button type="submit" class="btn btn-primary">Ajouter Chauffeur</button>
                         </form>
                     </div>
                 </div>
@@ -105,8 +106,8 @@
                         <td>789 Boulevard des Martyrs</td>
                         <td>0123456789</td>
                         <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
+                            <button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-x-square"></i></button>
                         </td>
                     </tr>
                 </tbody>

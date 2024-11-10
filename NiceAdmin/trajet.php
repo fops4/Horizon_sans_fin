@@ -58,7 +58,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
-              <button id="open-modal">Ajouter un Voyage</button>
+              <button id="open-modal" class="btn btn-primary">Ajouter un Voyage</button>
 
               <div id="myModal" class="modal">
                   <div class="modal-content">
@@ -72,7 +72,8 @@
                             <label for="ville_arrivee">Ville Arrivée:</label>
                             <input type="text" id="ville_arrivee" name="ville_arrivee" required>
                         </div>
-                        <button type="submit">Ajouter Trajet</button>
+                        <br/>
+                        <button type="submit" class="btn btn-primary">Ajouter Trajet</button>
                     </form>
                   </div>
               </div>
@@ -90,16 +91,8 @@
                         <td>Paris</td>
                         <td>Lyon</td>
                         <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Marseille</td>
-                        <td>Bordeaux</td>
-                        <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
+                            <button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-x-square"></i></button>
                         </td>
                     </tr>
                 </tbody>

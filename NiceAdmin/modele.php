@@ -58,7 +58,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
-              <button id="open-modal">Ajouter un Modele</button>
+              <button id="open-modal" class="btn btn-primary">Ajouter un Modele</button>
 
               <div id="myModal" class="modal">
                   <div class="modal-content">
@@ -72,7 +72,8 @@
                             <label for="marque">Marque:</label>
                             <input type="text" id="marque" name="marque" required>
                         </div>
-                        <button type="submit">Ajouter Modèle</button>
+                        <br/>
+                        <button type="submit" class="btn btn-primary">Ajouter Modèle</button>
                       </form>
                   </div>
               </div>
@@ -90,24 +91,8 @@
                         <td>Modèle A</td>
                         <td>Marque X</td>
                         <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Modèle B</td>
-                        <td>Marque Y</td>
-                        <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Modèle C</td>
-                        <td>Marque Z</td>
-                        <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
+                            <button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-x-square"></i></button>
                         </td>
                     </tr>
                 </tbody>

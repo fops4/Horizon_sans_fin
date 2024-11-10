@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="form.css" rel="stylesheet">
 
 </head>
 
@@ -57,6 +58,37 @@
           <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Inscriptions</h5>
+                <button id="open-modal" class="btn btn-primary">Ajouter un Client</button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form id="chauffeur-form">
+                          <div class="form-group">
+                              <label for="nom">Nom:</label>
+                              <input type="text" id="nom" name="nom" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="prenom">Prénom:</label>
+                              <input type="text" id="prenom" name="prenom" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="adresse">Adresse:</label>
+                              <input type="text" id="adresse" name="adresse" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="numero">Numéro:</label>
+                              <input type="text" id="numero" name="numero" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="email_inscription">Email:</label>
+                              <input type="email" id="email_inscription" name="email_inscription" required>
+                          </div>
+                          <br/>
+                          <button type="submit" class="btn btn-primary">Ajouter Client</button>
+                        </form>
+                    </div>
+                </div>
                 <table class="table">
                   <thead>
                       <tr>

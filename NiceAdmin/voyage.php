@@ -56,7 +56,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Voyages</h5>
-              <button id="open-modal">Ajouter un Voyage</button>
+              <button id="open-modal" class="btn btn-primary">Ajouter un Voyage</button>
 
               <div id="myModal" class="modal">
                   <div class="modal-content">
@@ -95,7 +95,8 @@
                               <label for="id_trajet">ID Trajet:</label>
                               <input type="number" id="id_trajet" name="id_trajet" required>
                           </div>
-                          <button type="submit">Ajouter Voyage</button>
+                          <br/>
+                          <button type="submit" class="btn btn-primary">Ajouter Voyage</button>
                       </form>
                   </div>
               </div>
@@ -127,8 +128,8 @@
                         <td>AB-123-CD</td>
                         <td>301</td>
                         <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
+                            <button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-x-square"></i></button>
                         </td>
                     </tr>
                 </tbody>

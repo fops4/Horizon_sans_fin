@@ -59,7 +59,7 @@
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
               <!-- Table with stripped rows -->
-              <button id="open-modal">Ajouter un colis</button>
+              <button id="open-modal" class="btn btn-primary">Ajouter un colis</button>
 
               <div id="myModal" class="modal">
                   <div class="modal-content">
@@ -105,14 +105,14 @@
                             <label for="id_voyage">ID Voyage:</label>
                             <input type="number" id="id_voyage" name="id_voyage" required>
                         </div>
-                        <button type="submit">Ajouter Colis</button>
+                        <br/>
+                        <button type="submit" class="btn btn-primary">Ajouter Colis</button>
                       </form>
                   </div>
               </div>
               <table class="table datatable">
                 <thead>
                     <tr>
-                        <th>ID Colis</th>
                         <th>Description</th>
                         <th>Prix</th>
                         <th>Destinataire</th>
@@ -127,7 +127,6 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
                         <td>Livraison de documents</td>
                         <td>15.00</td>
                         <td>Dupont Jean</td>
@@ -138,8 +137,8 @@
                         <td>1</td>
                         <td>1</td>
                         <td>
-                            <button>Modifier</button>
-                            <button>Supprimer</button>
+                            <button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                            <button class="btn btn-primary"><i class="bi bi-x-square"></i></button>
                         </td>
                     </tr>
                 </tbody>

@@ -85,11 +85,6 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-data.php">
-              <i class="bi bi-circle"></i><span>Clients</span>
-            </a>
-          </li>
-          <li>
             <a href="chauffeur.php">
               <i class="bi bi-circle"></i><span>Chauffeurs</span>
             </a>
@@ -129,16 +124,6 @@
               <i class="bi bi-circle"></i><span>Avis</span>
             </a>
           </li>
-          <li>
-            <a href="Colis.php">
-              <i class="bi bi-circle"></i><span>Colis</span>
-            </a>
-          </li>
-          <li>
-            <a href="reservation.php">
-              <i class="bi bi-circle"></i><span>reservation</span>
-            </a>
-          </li>
         </ul>
       </li><!-- End Tables Nav -->
 
@@ -173,8 +158,13 @@
         </a>
         <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.php">
-              <i class="bi bi-circle"></i><span>Alerts</span>
+            <a href="tables-data.php">
+              <i class="bi bi-circle"></i><span>Clients</span>
+            </a>
+          </li>
+          <li>
+            <a href="reservation.php">
+              <i class="bi bi-circle"></i><span>Reservations</span>
             </a>
           </li>
         </ul>
@@ -186,8 +176,13 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.php">
-              <i class="bi bi-circle"></i><span>Form Elements</span>
+            <a href="Colis.php">
+              <i class="bi bi-circle"></i><span>Colis</span>
+            </a>
+          </li>
+          <li>
+            <a href="tables-data.php">
+              <i class="bi bi-circle"></i><span>Clients</span>
             </a>
           </li>
         </ul>
